@@ -30,7 +30,7 @@ while read:
             print(f"    Created: {datetime.fromtimestamp(i['creation_date'])}")
             print(f"    Link:    {i['link']}")
             counter += 1
-        if jsoned['has_more'] == True:
+        if jsoned['has_more'] is True:
             page += 1
         else:
             print(f'====================\nEnd of list\n====================')
